@@ -1,6 +1,6 @@
 package ¶ş²æÊ÷;
 
-public class test {
+public class BinaryTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
