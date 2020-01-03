@@ -56,24 +56,20 @@ public class DisjointSet {
 	}
 	public static void main(String[] args)
 	{
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();int k=sc.nextInt();
+		
+		
 		DisjointSet d=new DisjointSet();
-		 for(int j=0;j<k;j++)
-	        {
-	        	int team=sc.nextInt();
-	        	if(team==1)
-	        	{
-	        		int t=sc.nextInt();System.out.println(d.value(t));
-	        	}
-	        	else
-	        	{
-	        		int t=sc.nextInt();
-	        		int t2=sc.nextInt();
-	        		d.union(t, t2);
-	        	}
-	        }
-	
+		d.union(1,2);
+		d.union(3,4);
+		d.union(5,6);
+		d.union(1,6);
+		
+		d.union(22,24);
+		d.union(3,26);
+		d.union(36,24);
+		System.out.println(d.search(6));	//头
+		System.out.println(d.value(6));     //大小
+		System.out.println(d.search(22));	//头
+		System.out.println(d.value(22));     //大小
 	}
-
 }
