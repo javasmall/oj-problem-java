@@ -33,7 +33,7 @@ public class 交换类排序 {
 	{
 		int low=left;
 		int high=right;
-	    //下面两句的顺序一定不能混，否则会产生数组越界！！！very important！！
+	    //下面两句的顺序一定不能混，否则会产生数组越界！！！very important！！！
 		if(low>high)
 			return;
 		int k=a[low];//取最左侧的一个作为衡量，最后要求左侧都比它小，右侧都比它大。
